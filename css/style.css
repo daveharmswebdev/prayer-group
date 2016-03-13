@@ -30,7 +30,6 @@ ul {
     background-color: rgba(  9,137,221,1);
     border: 1px black solid;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -39,6 +38,30 @@ ul {
     cursor: pointer;
     height: 3rem;
     width: 6rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.detailButton {
+    background-color: rgba(  9,137,221,1);
+    border: 1px black solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 4rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.topButtons, .bottomButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 4rem;
+	width: 100%;
 }
 
 .prayerRequest, .prayerDetails {
@@ -59,11 +82,8 @@ ul {
 	display: flex;
 }
 
-.prayerDetails--row {
-	display: flex;
-}
-
 .prayerDetails--image,
+.prayerDetails--request,
 .prayerDetails--sensitivityUrgency, 
 .prayerDetails--tags {
 	display: flex;
@@ -71,10 +91,16 @@ ul {
 	padding: 1rem;
 }
 
+.prayerDetails--image {
+	height: 3rem;
+	justify-content: flex-end;
+	padding-right: 2.5rem;
+}
+
 .prayerDetails--row {
 	display: flex;
 	flex-direction: row;
-	height: 3rem;
+	height: 6rem;
 	width: 100%;
 }
 
@@ -82,7 +108,7 @@ ul {
 .prayerDetails--subject {
 	display: flex;
 	flex-direction: column;
-	padding: 0.25rem;
+	padding: 0.25rem 0.5rem;
 }
 
 .prayerDetails--requester {
@@ -93,22 +119,45 @@ ul {
 	width: 60%;
 }
 
-.prayerDetails--image {
+.prayerDetails--request {
 	height: 3rem;
-	justify-content: flex-end;
-	padding-right: 2.5rem;
+	width: 100%;
 }
 
 .prayerDetails--sensitivityUrgency {
-	height: 6rem;
+	height: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .prayerDetails--tags {
-
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+	align-items: flex-start;
 }
 
+.prayerDetails--requester__input {
+	height: 1rem;
+}
+
+.prayerDetails--subject__input {
+	height: 3rem;
+}
+
+.prayerDetails--tags__input {
+	height: 2rem;
+	width: 18rem;
+	margin-left: 1rem;
+}	
+
 .label {
-	margin:0;
+	margin:0 0 0.25rem 0;
+}
+
+.tagLabel {
+	margin: 0;
 }
 
 .prayerRequest--capsule {
