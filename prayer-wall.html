@@ -65,8 +65,15 @@
 		  			<input class='prayerDetails--subject__input' type="text">
 	  			</div>
 			</div>
-	  		<div class="prayerDetails--request"></div>
-	  		<div class="prayerDetails--sensitivityUrgency"></div>
+	  		<div class="prayerDetails--request">
+	  			<p class='tagLabel' >Request</p>
+		  		<input class='prayerDetails--request__input' type="text" value="">
+	  		</div>
+	  		<div class="prayerDetails--sensitivityUrgency">
+	  			<label for="public"><input id='public' type="checkbox">Public</label>
+	  			<label for="private"><input id='private' type="checkbox">Private</label>
+	  			<label for="anonymous"><input id='anonymous' type="checkbox">Anonymous</label>
+	  		</div>
 	  		<div class="prayerDetails--tags">
 	  			<p class="tagLabel">Tags</p>
 	  			<input type="text" class="prayerDetails--tags__input">
