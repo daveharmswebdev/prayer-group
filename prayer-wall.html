@@ -20,32 +20,32 @@
   	</header>
   	<section class="container">
 	  	<section class='prayerRequest'>
-			<div class="prayerRequest--capsule">
+			<div class="prayerRequest--capsule" data='1'>
 				<span class='prayerRequest--selector'><i class="fa fa-circle-o"></i></span><p>Lorem ipsum dolor sit amet.</p>
 				<div class="prayerRequest--profilePic"><img src="pics/emma.jpg" alt=""></div>
 			</div>
-			<div class="prayerRequest--capsule">
+			<div class="prayerRequest--capsule" data='2'>
 				<span class='prayerRequest--selector'><i class="fa fa-circle-o"></i></span>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<div class="prayerRequest--profilePic"><img src="pics/greg.jpg" alt=""></div>
 			</div>
-			<div class="prayerRequest--capsule">
+			<div class="prayerRequest--capsule" data='3'>
 				<span class='prayerRequest--selector'><i class="fa fa-circle-o"></i></span>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<div class="prayerRequest--profilePic"><img src="pics/jackson.jpg" alt=""></div>
 			</div>
-			<div class="prayerRequest--capsule">
+			<div class="prayerRequest--capsule" data='4'>
 				<span class='prayerRequest--selector'><i class="fa fa-circle-o"></i></span>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<div class="prayerRequest--profilePic"><img src="pics/jimmy.jpg" alt=""></div>
 			</div>
-			<div class="prayerRequest--capsule">
+			<div class="prayerRequest--capsule" data='5'>
 				<span class='prayerRequest--selector'><i class="fa fa-circle-o"></i></span>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<div class="prayerRequest--profilePic"><img src="pics/sherry.jpeg" alt=""></div>
 			</div>
 	  	</section>
-	  	<section class="prayerDetails">
+	  	<section class="prayerDetails hide">
 	  		<div class="prayerDetails--image">
 	  			<div class="prayerRequest--profilePic"><img src="pics/emma.jpg" alt=""></div>
 	  		</div>
@@ -58,16 +58,19 @@
 			<div class="prayerDetails--row">
 		  		<div class="prayerDetails--requester">
 		  			<p class='label' >Requester</p>
-		  			<input class='prayerDetails--requester__input' type="text" value="Emma">
+		  			<textarea name="requesetor" id="requester" cols="10" rows="1">Emma</textarea>
+		  			<!-- <input class='prayerDetails--requester__input' type="text" value="Emma"> -->
 		  		</div>
 	  			<div class="prayerDetails--subject">
 	  				<p class='label' >Subject</p>
-		  			<input class='prayerDetails--subject__input' type="text">
+	  				<textarea name="subject" id="subject" cols="18" rows="3">Family</textarea>
+		  			<!-- <input class='prayerDetails--subject__input' type="text" value='Family'> -->
 	  			</div>
 			</div>
 	  		<div class="prayerDetails--request">
 	  			<p class='tagLabel' >Request</p>
-		  		<input class='prayerDetails--request__input' type="text" value="">
+	  			<textarea name="request" id="request" cols="30" rows="4">Pray for my brother. Help him get a job and feed his family.</textarea>
+<!-- 		  		<input class='prayerDetails--request__input' type="text" value="Pray for my brother. Help him get a job and feed his family."> -->
 	  		</div>
 	  		<div class="prayerDetails--sensitivityUrgency">
 	  			<label for="public"><input id='public' type="checkbox">Public</label>
@@ -76,7 +79,8 @@
 	  		</div>
 	  		<div class="prayerDetails--tags">
 	  			<p class="tagLabel">Tags</p>
-	  			<input type="text" class="prayerDetails--tags__input">
+	  			<textarea name="tags" id="" cols="30" rows="2">family finance fool</textarea>
+	  			<!-- <input type="text" class="prayerDetails--tags__input" value='family finances desperate'> -->
 	  		</div>
 	  		<div class="bottomButtons">
 	  			<button class='detailButton'>Reminder</button>
@@ -86,7 +90,8 @@
 	  		</div>
 	  	</section>
   	</section>
-    
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

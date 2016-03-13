@@ -63,10 +63,10 @@ ul {
 	width: 100%;
 }
 
-.prayerRequest, .prayerDetails {
+.prayerRequest, {
 	background-color: rgba(161,215,249,1);
 	width: 100%;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
@@ -144,6 +144,10 @@ ul {
 	margin: 0.5rem
 }
 
+input {
+	word-wrap: break-word;
+}
+
 .prayerDetails--requester__input {
 	height: 1rem;
 }
@@ -197,6 +201,10 @@ ul {
 
 .prayerRequest--profilePic > img {
 	height: 3rem;
+}
+
+.hide {
+	display: none;
 }
 
 
