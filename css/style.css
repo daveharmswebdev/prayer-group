@@ -68,33 +68,36 @@ ul {
 .prayerDetails--tags {
 	display: flex;
 	width: 100%;
-	padding: 2rem;
+	padding: 1rem;
 }
 
 .prayerDetails--row {
 	display: flex;
 	flex-direction: row;
+	height: 3rem;
 	width: 100%;
 }
 
 .prayerDetails--requester, 
 .prayerDetails--subject {
 	display: flex;
-	width: 50%;
-	padding: 2rem;
-}
-
-.prayerDetails--image {
-	height: 6rem;
+	flex-direction: column;
+	padding: 0.25rem;
 }
 
 .prayerDetails--requester {
-	height: 6rem;
+	width: 40%;
 }
 
 .prayerDetails--subject {
-	height: 6rem;
-} 
+	width: 60%;
+}
+
+.prayerDetails--image {
+	height: 3rem;
+	justify-content: flex-end;
+	padding-right: 2.5rem;
+}
 
 .prayerDetails--sensitivityUrgency {
 	height: 6rem;
@@ -102,6 +105,10 @@ ul {
 
 .prayerDetails--tags {
 
+}
+
+.label {
+	margin:0;
 }
 
 .prayerRequest--capsule {
